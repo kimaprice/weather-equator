@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lattitude Weather Analysis</title>
+  <!-- Set the viewport the way Bootstrap likes it -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bring in the Bootstrap stylesheet -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+  <!-- Bring in our own stylesheet, AFTER Bootstrap  -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Create the Nav Bar for the top of all of the pages -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Latitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="row justify-content-end">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="comparison.html" target="_top">Comparison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="data.html" target="_top">Data</a>
+        </li>
+
+      </ul>
+      </div>
+    </div>
+  </nav>
+<!-- End of Nav -->
+</body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-9">
+          <h3>Analysis of Lattitude and Weather<br></h3>
+          <h6>A random sample of over 500 cities in the world was gathered. 
+            Weather data for 8/12/2022 was obtained for these cities using the 
+            Open Weather Map API. The data points were analyzed to identify if 
+            any correlations exist in the various points of interest and the city's 
+            distance from the equator (latitude).</h6>
+          <br>
+          <h5>Weather Data (points of interest):</h5>
+          <ul>
+            <li>Max Temperature (Degrees F)</li>
+            <li>Humidity (%)</li>
+            <li>Cloudiness (%)</li>
+            <li>Wind Speed (mi/hr)</li>
+          </ul>
+          <h6>Limitiations</h6>
+          <ul>
+          <li>This data is a snapshot in time covering only one day in August. 
+            The data if gathered over a longer timespan or even if taken on a day 
+            during a different time of the year, may show different results.</li>
+          </ul>
+       </div>
+      <div class="col-md-3">
+          <div id="sidebar" class="collapse collapse-horizontal show border-end">
+            <div id="sidebar-nav" class="list-group border-0 rounded-0 text-sm-start min-vh-100">
+              <h3>Visualizations</h3>
+                <a target="_top" href="visualizations/maxtemp.html">
+                  <img src="assets/images/Lat_MaxTemp_Plot.png" alt="Max Temp" width="200" height="100">
+                </a>
+                  <a target="_top" href="visualizations/humidity.html">
+                    <img src="assets/images/Lat_Humidity_Plot.png" alt="Humidity" width="200" height="100">
+                  </a>
+                  <a target="_top" href="visualizations/cloudiness.html">
+                    <img src="assets/images/Lat_Cloudiness_Plot.png" alt="Cloudiness" width="200" height="100">
+                  </a>
+                  <a target="_top" href="visualizations/windspeed.html">
+                    <img src="assets/images/Lat_WindSpeed_Plot.png" alt="Wind Speed" width="200" height="100">
+                  </a>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+</li>
+
+
+</html>
