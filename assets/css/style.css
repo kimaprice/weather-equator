@@ -1,3 +1,36 @@
 
+/* adding border to image for selected visualization*/
+.selected {
+  border-style: solid;
+  border-color: darkblue;
+}
 
+.head h1 { 
+  align-items: center;
+}
 
+.nav-item {
+   align-items: flex-end;
+}
+
+/* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
+@media (max-width: 480px) {
+    .nav li {
+      padding: 10px;
+      align-self:flex-end;
+      background-color: aliceblue;
+    }
+  
+    .post {
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+  
+    .nav ul {
+      visibility: hidden;
+    }
+  
+    #nav-select {
+      visibility: visible;
+    }
+  }
