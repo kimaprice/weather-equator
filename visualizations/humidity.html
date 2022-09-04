@@ -12,9 +12,7 @@
 
   <!-- Bring in our own stylesheet, AFTER Bootstrap  -->
   <link rel="stylesheet" href="../assets/css/style.css">
-</head>
 
-<body>
   <!-- Create the Nav Bar for the top of all of the pages -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="../index.html">Latitude</a>
@@ -48,6 +46,12 @@
   </nav>
 <!-- End of Nav -->
 
+<h1>Lattitude Impact on Humidity</h1>
+
+</head>
+
+<body>
+
 <!-- Create the Grid containing the visualization and summary of visualization-->
     <!-- Creates the Overall Grid -->
     <div class="container">
@@ -56,7 +60,6 @@
         <div class="row">
             <!-- First (and only column) -->
             <div class="col-md-12">
-                <h1>Lattitude Impact on Humidity</h1>
                 <h5>Summary of finding: Humidity is not impacted by distance from the equator</h5>
                 <br>
             </div>
@@ -106,6 +109,43 @@
                 <li>R scores for both northern and southern hemispheres is well below .5.</li>
             </ul>
         </div>
+      </div>
+      <!-- Sixth Row heading for Visualizations links -->
+      <div class="row">
+        <div class="row">
+          <div class="col-md-12">
+            <br><br><br>
+            <h5>Visualizations</h5>
+          </div>  
+      </div>
+      <!--Seventh Row Links to the other visualizations -->
+      <div class="row">
+      <div class="col-md-3">
+        Max Temp
+        <a target="_top" href="maxtemp.html">
+          <img src="../assets/images/Lat_MaxTemp_Plot.png" alt="Max Temp" width="200" height="150">
+        </a>
+      </div>
+      <div class="col-md-3">
+        Humidity
+        <a target="_top" href="humidity.html">
+          <img src="../assets/images/Lat_Humidity_Plot.png" alt="Humidity width="200" height="150">
+        </a>
+      </div>
+      <div class="col-md-3">
+        Wind Speed
+        <a target="_top" href="windspeed.html">
+          <img src="../assets/images/Lat_WindSpeed_Plot.png" alt="Wind Speed" width="200" height="150">
+        </a>
+      </div>
+      <div class="col-md-3">
+        <selected>
+        Cloudiness
+        <a target="_top" href="cloudiness.html">
+          <img src="../assets/images/Lat_Cloudiness_Plot.png" alt="Cloudiness" width="200" height="150">
+        </a>
+      </selected>
+      </div>
       </div>
     </div>
 </body>
