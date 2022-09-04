@@ -15,34 +15,36 @@
 
     <!-- Create the Nav Bar for the top of all of the pages -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html">Latitude</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#">Latitude Analysis</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="row justify-content-end">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Plots
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
           <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home </a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="comparison.html" target="_top">Comparison</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="data.html" target="_top">Data</a>
           </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown link
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="visualizations/maxtemp.html" target="_top">Max Temp</a>
+              <a class="dropdown-item" href="visualizations/humidity.html" target="_top">Humidity</a>
+              <a class="dropdown-item" href="visualizations/cloudiness.html" target="_top">Cloudiness</a>
+              <a class="dropdown-item" href="visualizations/windspeed.html" target="_top">Wind Speed</a>
+            </div>
+          </li>
         </ul>
-        </div>
       </div>
     </nav>
+
   <!-- End of Nav -->
   <h1>Analysis of Lattitude and Weather</h1>
 </head>
@@ -51,16 +53,15 @@
   <div class="container-fluid">
       <div class="row">
           <div class="col-9">
-            This site contains an analsis of the correlation of lattitude (distance from
+            <p>This site contains an analsis of the correlation of lattitude (distance from
               the equator) and weather.  Four weather points of interest were studied to
-              come to conclusions about lattitude's impact on weather.
-            <br> <br>
-            A random sample of over 500 cities in the world was gathered. 
+              come to conclusions about lattitude's impact on weather.</p>
+            <p>A random sample of over 500 cities in the world was gathered. 
               Weather data for 8/12/2022 was obtained for these cities using the 
               Open Weather Map API. The data points were plotted and analyzed to identify if 
               any correlations exist in the various points of interest and the city's 
-              distance from the equator (latitude).
-            <br><br>
+              distance from the equator (latitude).</p>
+            <br>
             <h5>Weather Data (points of interest):</h5>
             <ul>
               <li>Max Temperature (Degrees F)</li>
@@ -100,6 +101,8 @@
           </div>
       </div>
   </div>
+ <!-- Import the Bootstrap JavaScript code -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
 </body> 
 </html>
