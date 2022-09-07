@@ -2,11 +2,12 @@
 /* adding border to image for selected visualization*/
 .selected {
   border-style: solid;
-  border-color: darkblue;
+  border-color: #333c66;
 }
 
 h1 { 
   margin-left: 20px;
+  color: #333c66;
 }
 
 .container-fluid {
@@ -19,10 +20,49 @@ p {
 
 .table-responsive {
   margin-left: 20px;
+  background-color: #fafafc;
 }
 
-.nav-item {
-   align-items: flex-end;
+.navbar-brand {
+  background-color: #333c66;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+.dropdown-item{
+  background-color: #333c66;
+  color: aliceblue;
+}
+
+.dropdown-menu{
+  background-color: #333c66;
+  color: aliceblue;
+}
+
+.navbarDropdown {
+  background-color: #333c66;
+  color: aliceblue;
+}
+
+.nav-link {
+  background-color: #333c66;
+  align-items: flex-end;
+  color: aliceblue;
+}
+
+.navbar {
+  background-color: #333c66;
+  align-items: flex-end;
+  color: aliceblue;
+}
+
+thead {
+  background-color: #333c66;
+  color: aliceblue;
+}
+
+body {
+  background-color:#f2f2f5;
 }
 
 /* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */

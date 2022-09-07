@@ -13,6 +13,7 @@ Website displaying analysis of weather trends in relationship to distance from t
 ### Data Page
   * A table displaying the underlying data used for the plots
   * Nav Bar with links to Comparison, Data, and Drop Down to visualizations
+  * This table was created by using pandas (resources/app.py) to convert the CSV data file into a static html table (resources/csvdata.html)
 
 ### Visualization Pages:
 #### Summary of the findings for each correlation analysis along with the visualizations/plots.
